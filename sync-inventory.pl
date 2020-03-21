@@ -80,8 +80,6 @@ sub bizowie_call
             $o = decode_json($q->decoded_content);
         } catch {
             $o = { unprocessed => 1 };
-
-             warn $q->as_string;
         };
     }     
 
